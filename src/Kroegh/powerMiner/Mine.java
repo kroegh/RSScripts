@@ -4,7 +4,7 @@ import org.powerbot.script.rt4.GameObject;
 
 public class Mine extends Task<ClientContext>{
 	
-	private int[] mineIds = {7484, 7453};
+	private int[] mineIds = {7488, 7455};
 
 	public Mine(ClientContext ctx){
 		super(ctx);

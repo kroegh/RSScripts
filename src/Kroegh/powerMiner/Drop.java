@@ -5,7 +5,7 @@ import org.powerbot.script.rt4.Item;
 
 public class Drop extends Task<ClientContext>{
 	
-	private int mineId = 436;
+	private int mineId = 440;
 			
 	public Drop(ClientContext ctx){
 		super(ctx);

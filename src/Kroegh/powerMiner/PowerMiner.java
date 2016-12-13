@@ -13,7 +13,7 @@ public class PowerMiner extends PollingScript<ClientContext>{
 	
 	@Override
 	public void start(){
-		taskList.addAll(Arrays.asList(new Mine(ctx), new Walking(ctx), new Banking(ctx), new DropEmeralds(ctx), new DropSapphires(ctx)));
+		taskList.addAll(Arrays.asList(new Mine(ctx), new DropEmeralds(ctx), new DropSapphires(ctx), new DropRubies(ctx), new WalkToBank(ctx), new Banking(ctx), new WalkToMine(ctx)));
 	}
 	
 	@Override

@@ -1,10 +1,14 @@
 package Kroegh.powerMiner;
+import org.powerbot.script.Area;
+import org.powerbot.script.Tile;
 import org.powerbot.script.rt4.ClientContext;
 import org.powerbot.script.rt4.GameObject;
 
 public class Mine extends Task<ClientContext>{
 	
 	private int[] mineIds = {7488, 7455};
+	
+	Area Area1= new Area(new Tile(3283, 3371), new Tile(3280, 3366));
 
 	public Mine(ClientContext ctx){
 		super(ctx);
@@ -12,7 +16,7 @@ public class Mine extends Task<ClientContext>{
 	
 	@Override
 	public boolean activate(){
-		return ctx.inventory.select().count() < 28 && !ctx.objects.select().id(mineIds).isEmpty() && ctx.players.local().animation() == -1;
+		return ctx.inventory.select().count() < 28 && !ctx.objects.select().id(mineIds).isEmpty() && ctx.players.local().animation() == -1 && Area1.contains(ctx.players.local());
 	}
 
 	@Override

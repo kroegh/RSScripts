@@ -8,7 +8,7 @@ public class Mine extends Task<ClientContext>{
 	
 	private int[] mineIds = {7488, 7455};
 	
-	Area Area1= new Area(new Tile(3283, 3371), new Tile(3280, 3366));
+	Area Area1= new Area(new Tile(3283, 3372), new Tile(3289, 3366));
 
 	public Mine(ClientContext ctx){
 		super(ctx);
